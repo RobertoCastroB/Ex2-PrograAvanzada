@@ -2,12 +2,10 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
-// Usa file i/o.
 int main() {
     int linea,x;
     char data[51][80];
     srandom(getpid());
-    //random()%51
     FILE * archivo = fopen("sayings.txt","r");
     x=80;
     for (int i = 0; i <= x ; i++){
