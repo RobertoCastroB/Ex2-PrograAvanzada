@@ -11,7 +11,6 @@ void sigusr1_handler(int s){
 }
 
 int main () {
-  char buffer[BUFSIZ];
   int n;
   f = fopen("proceso.pid","w+");
   if (!fork()){
